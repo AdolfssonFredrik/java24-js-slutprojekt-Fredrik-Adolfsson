@@ -1,0 +1,32 @@
+tr{
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 20px;
+}
+tr:nth-child(odd) {
+    background-color: #EFEFEF;
+}
+td{
+    padding-right: 20px;
+}
+
+table{
+    margin-bottom: 75px;
+}
+#moviePoster{
+    width: 250px;
+}
+
+button{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #193cb8;
+    color: white;
+}
+
+#top{
+    position: sticky;
+    top: 20px;
+
+}

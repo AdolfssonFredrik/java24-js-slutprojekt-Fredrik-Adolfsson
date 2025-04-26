@@ -2,40 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>The Movie Database</title>
+    <link rel="stylesheet" href="assets/css/index.css">
     <script src="main.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/4937427547.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-300 flex flex-col content-center">
     <h1 class="text-4xl font-bold text-center">
         The Movie Database
     </h1>
-    <form class="flex flex-row justify-center items-center py-2">
+    <div class="flex flex-col items-center justify-center" >
+
+        <button>Top Rated Movies</button>
+        <button>Popular Movies</button>
+
+    </div>
+    <form class="flex flex-row justify-center items-center py-2 px-4">
         <input
                 type="text"
-                class="border mx-4"
+                class="border mx-4 rounded-md"
+
         >
+        <label for="search" class="font-bold">Search For:  </label>
+        <select name="search" id="search">
+            <option value="person">Person</option>
+            <option value="movie">Movie</option>
+        </select>
         <input
                 type="submit"
                 class="bg-blue-800 p-2 rounded-xl text-white"
+                value="Search"
         >
     </form>
-    <table class="outline w-3/5 justify-center items-center ml-auto mr-auto table-auto">
-        <thead>
+    <form class="flex flex-row justify-center items-center py-2 px-4">
+        <label for="sort" class="font-bold">Sort By:  </label>
+        <select name="sort" id="sort">
+            <option value="nothing">Nothing</option>
+            <option value="name_asc">Name/Title Ascending</option>
+            <option value="name_desc">Name/Title Descending</option>
+            <option value="popularity_asc">Popularit/Rating Ascending</option>
+            <option value="popularity_desc">Popularit/Rating Descending</option>
+        </select>
+    </form>
+
+    <table class="outline w-fit justify-center items-center ml-auto mr-auto table-auto">
+        <thead class="sticky top-0 z-10">
             <tr>
-                <th >Title</th>
-                <th>Popularity</th>
-                <th>Release Date</th>
+
             </tr>
         </thead>
         <tbody>
 
         </tbody>
     </table>
-    <button>Top Rated Movies</button>
-    <button>Popular Movies</button>
-    <button>Search For A Movie</button>
+
+    <a href="#" class="text-3xl fixed bottom-10 right-40 bg-blue-800 text-white p-3 rounded-lg">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
 
 </body>
 </html>

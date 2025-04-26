@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../Details.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/4937427547.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/Details.css">
+</head>
+<body class="w-full min-h-screen h-fit flex flex-row justify-center">
+    <div class="w-3/5 bg-gray-100 flex flex-col">
+        <a href="../index.html" class="text-3xl fixed bottom-10 right-40 bg-blue-800 text-white p-3 rounded-lg">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <div class="px-2 py-2">
+            <h1 id="title" class="text-xl font-bold"></h1>
+        </div>
+        <div class="flex flex-row justify-between w-full">
+            <div class="flex flex-row px-4 font-bold py-2 ">
+                <h3 id="runtime" class="pr-5"></h3>
+                <h3 id="releaseDate" ></h3>
+            </div>
+            <div>
+                <div class="px-4 font-bold py-2 underline">
+                    <a href="" id="imdbLink" target="_blank">IMDB</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-[400px] px-4">
+            <img src="" alt="" id="poster" >
+        </div>
+        <hr class="mt-5 mb-5 w-9/10 self-center">
+        <div class="px-4 flex flex-row">
+            <div class="w-1/2">
+                <div>
+                    <h3 class="font-bold text-lg">Description:</h3>
+                    <p id="description" class="text-lg"></p>
+                </div>
+            </div>
+            <div class="w-1/2">
+                <div >
+                    <h3 class="font-bold text-lg">Info:</h3>
+                    <div class="text-lg px-4 flex flex-row py-2">
+                        <p class="font-bold pr-4">Budget:</p>
+                        <p id="budget"></p>
+                    </div>
+                    <div class="text-lg px-4 flex flex-row py-2">
+                        <p class="font-bold pr-4">Revenue:</p>
+                        <p id="revenue"></p>
+                    </div>
+                    <div class="text-lg px-4 flex flex-row py-2 ">
+                        <p class="font-bold pr-4">Vote Average:</p>
+                        <p id="voteAverage"></p>
+                    </div>
+                    <div class="text-lg px-4 flex flex-row py-2">
+                        <p class="font-bold pr-4">Original Language:</p>
+                        <p id="originalLanguage"></p>
+                    </div>
+                    <div class="text-lg px-4 flex flex-row py-2">
+                        <p class="font-bold pr-4">Genres:</p>
+                        <div id="genres" class="flex flex-row ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>
